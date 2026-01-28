@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <title>FuZion • Wipe Countdown</title>
+
+  <!-- Social preview (Discord/Twitter) -->
+  <meta property="og:title" content="FuZion • Wipe Countdown" />
+  <meta property="og:description" content="Wipe: 30 January • Server ID: 858c63d • Join Discord" />
+  <meta property="og:image" content="background.png" />
+  <meta name="theme-color" content="#000000" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <!-- Background layers -->
+  <div class="bg" aria-hidden="true"></div>
+  <div class="vignette" aria-hidden="true"></div>
+  <div class="grain" aria-hidden="true"></div>
+
+  <main class="wrap" role="main">
+    <section class="card" aria-label="Wipe countdown">
+      <header class="top">
+        <div class="pill">FUZION • SOLO/DUO • MONTHLY</div>
+
+        <div class="right">
+          <a class="miniBtn" href="https://discord.gg/aUVKDV8nPk" target="_blank" rel="noopener" aria-label="Join Discord">
+            JOIN DISCORD
+          </a>
+        </div>
+      </header>
+
+      <div class="hero">
+        <h1 class="title">WIPE COUNTDOWN</h1>
+        <div class="target">
+          <span class="label">Target</span>
+          <span id="targetText" class="value">—</span>
+        </div>
+      </div>
+
+      <div class="grid" aria-live="polite">
+        <div class="tile">
+          <div class="num" id="d">--</div>
+          <div class="lbl">DAYS</div>
+        </div>
+        <div class="tile">
+          <div class="num" id="h">--</div>
+          <div class="lbl">HOURS</div>
+        </div>
+        <div class="tile">
+          <div class="num" id="m">--</div>
+          <div class="lbl">MIN</div>
+        </div>
+        <div class="tile">
+          <div class="num" id="s">--</div>
+          <div class="lbl">SEC</div>
+        </div>
+      </div>
+
+      <div class="barWrap" aria-hidden="true">
+        <div class="barText">
+          <span class="barLabel">WIPE PROGRESS</span>
+          <span id="pct" class="barPct">—%</span>
+        </div>
+        <div class="bar">
+          <div id="barFill" class="barFill"></div>
+        </div>
+      </div>
+
+      <div class="ctaRow">
+        <a class="cta" href="https://discord.gg/aUVKDV8nPk" target="_blank" rel="noopener">
+          <span class="ctaGlow" aria-hidden="true"></span>
+          <span class="ctaText">JOIN NOW</span>
+        </a>
+        <div class="ctaSub">GET READY • LOCK IN</div>
+      </div>
+
+      <footer class="foot">
+        <div class="server">Server ID: <strong>858c63d</strong></div>
+        <div id="status" class="status">—</div>
+      </footer>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
