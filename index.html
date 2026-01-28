@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>FuZion • Wipe Countdown</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="wrap" role="main">
+    <section class="panel" aria-label="Wipe countdown">
+      <div class="badge">FuZion • SOLO/DUO • MONTHLY</div>
+
+      <h1 class="title">WIPE COUNTDOWN</h1>
+      <p class="sub">Target: <span id="targetText"></span></p>
+
+      <div class="timer" aria-live="polite">
+        <div class="unit">
+          <div class="num" id="d">--</div>
+          <div class="lbl">DAYS</div>
+        </div>
+        <div class="sep">:</div>
+        <div class="unit">
+          <div class="num" id="h">--</div>
+          <div class="lbl">HOURS</div>
+        </div>
+        <div class="sep">:</div>
+        <div class="unit">
+          <div class="num" id="m">--</div>
+          <div class="lbl">MIN</div>
+        </div>
+        <div class="sep">:</div>
+        <div class="unit">
+          <div class="num" id="s">--</div>
+          <div class="lbl">SEC</div>
+        </div>
+      </div>
+
+      <a class="cta ctaBtn" href="https://discord.gg/aUVKDV8nPk" target="_blank" rel="noopener">
+        JOIN NOW
+      </a>
+      <div class="ctaSub">GET READY</div>
+      <div class="foot">Server ID: <strong>858c63d</strong></div>
+
+      <details class="hint">
+        <summary>Change wipe time</summary>
+        <p>
+          Edit <code>WIPE_LOCAL</code> in <code>script.js</code>.
+          This countdown uses your device's local time zone.
+        </p>
+      </details>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
